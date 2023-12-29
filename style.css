@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    width: 100%;
+    height: 120vh;
+    background-image: url(res/bg.jpg);
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid rgb(35, 35, 35);
+}
+
+.hero-section .dark-box {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.hero-section .hero-content {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.hero-section .hero-content .nav {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section .hero-content .nav .lang-login button,
+.contact button {
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.hero-section .hero-content .contents {
+    width: 75%;
+    margin: 0px auto 50px auto;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.hero-section .hero-content .contents p,
+.faq .form p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.hero-section .hero-content .contents form input,
+.faq .form form input {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid rgb(119, 118, 118);
+    color: white;
+    border-radius: 5px;
+}
+
+#email,
+#email2 {
+    width: 30%;
+    background: rgba(0, 0, 0, 0.6);
+    margin-right: 20px;
+}
+
+#submit,
+#submit2 {
+    width:20%;
+    border: none;
+    background: #E50914;
+}
+
+.tv-section,
+.download-section,
+.stream-section,
+.profile-section {
+    padding: 0px 10%;
+    width: 100%;
+    height: 85vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid rgb(35, 35, 35);
+}
+
+.tv-section .text,
+.download-section .text,
+.stream-section .text,
+.profile-section .text {
+    width: 50%;
+    font-size: 20px;
+}
+
+.tv-section .text h2,
+.download-section .text h2,
+.stream-section .text h2,
+.profile-section .text h2 {
+    font-size: 45px;
+}
+
+.tv-section .media,
+.download-section .media,
+.stream-section .media,
+.profile-section .media {
+    width: 50%;
+    position: relative;
+    padding: 10px;
+}
+
+.tv-section .media img,
+.download-section .media img,
+.stream-section .media img,
+.profile-section .media img {
+    width: 90%;
+    z-index: 10;
+    position: relative;
+}
+
+.tv-section .media video {
+    position: absolute;
+    right: 23%;
+    top: 21%;
+    width: 64%;
+}
+
+.download-section .media .border {
+    width: 50%;
+    height: 23%;
+    background: black;
+    border: 1px solid rgb(119, 118, 118);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    z-index: 10;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-section .media .border img {
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+}
+
+.stream-section .media video {
+    position: absolute;
+    right: 29%;
+    top: 14%;
+    width: 53%;
+}
+
+.faq{
+    padding: 0px 10%;
+    width: 100%;
+    background: black;
+    color: white;
+    border-bottom: 10px solid rgb(35, 35, 35);
+    text-align: center;
+}
+
+.faq h1{
+    padding: 40px 0px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.faq .question{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    background: #313131;
+    margin-top: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.faq .form{
+    padding: 60px 0px;
+}
+
+.contact{
+    padding: 5% 15%;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+.contact .sitemap{
+    margin: 3% 0%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.contact p a,
+.contact .sitemap li a{
+    color: wheat;
+    font-size: 14px;
+}
