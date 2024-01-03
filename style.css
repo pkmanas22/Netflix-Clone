@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -12,29 +11,29 @@ body{
     min-width: 200px;
 }
 
-
+/* 
 @media (max-width:600px) {
     * {
         font-size: 18px;
     }
-}
+} */
 
 .hero-section {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     background-image: url(res/bg.jpg);
-    background-size: max(2000px, 100vw) 110vh;
+    background-size: max(2000px, 100vw) 120vh;
     background-position: center center;
     background-repeat: no-repeat;
     border-bottom: 10px solid rgb(35, 35, 35);
 }
-
+/* 
 @media (min-width: 1440px) {
     .hero-section {
         height: 80vh;
         background-size: max(2000px, 100vw) 80vh;
     }
-}
+} */
 
 @media (max-width:960px) {
     .hero-section {
@@ -76,7 +75,7 @@ body{
 }
 
 .hero-section .hero-content .nav {
-    width: 80%;
+    width: 75%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -93,12 +92,22 @@ body{
     color: white;
 }
 
+.hero-section .hero-content .nav .lang-login .login{
+    background: #E50914;
+    cursor: pointer;
+}
+
 .hero-section .hero-content .contents {
     width: 75%;
     margin: 0px auto 50px auto;
     color: white;
     text-align: center;
     font-size: 25px;
+}
+
+.hero-section .hero-content .contents h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .hero-section .hero-content .contents p,
@@ -119,18 +128,25 @@ body{
 
 #email,
 #email2 {
-    width: 40%;
+    width: 35%;
     background: rgba(0, 0, 0, 0.6);
     margin-right: 20px;
 }
 
 #submit,
 #submit2 {
-    width: 30%;
+    width: 25%;
     border: none;
     background: #E50914;
+    cursor: pointer;
 }
 
+#submit:hover, 
+#submit2:hover, 
+.hero-section .hero-content .nav .lang-login .login:hover{
+    background: #c20e17;
+    transition: all 0.3s ease-in;
+}
 
 @media (max-width: 960px) {
     .hero-section .hero-content {
@@ -231,7 +247,7 @@ body{
 .download-section,
 .stream-section,
 .profile-section {
-    padding: 5%;
+    padding: 5% 13%;
     width: 100%;
     background: black;
     color: white;
@@ -292,6 +308,8 @@ body{
 .stream-section .text h2,
 .profile-section .text h2 {
     font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .tv-section .media,
@@ -373,7 +391,6 @@ body{
 }
 
 .download-section .media .border {
-    min-width: 200px;
     min-height: 42px;
     width: 50%;
     height: 23%;
@@ -424,8 +441,8 @@ body{
 .faq h1 {
     padding: 40px 0px;
     font-size: 50px;
-    font-family: "Martel Sans", 'Poppins', "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .faq .question {
@@ -439,6 +456,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    cursor: pointer;
+}
+
+.faq .question:hover{
+    background: #525252;
+    transition: all 0.3s linear;
 }
 
 @media (max-width: 960px) {
