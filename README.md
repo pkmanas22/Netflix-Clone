@@ -1,4 +1,4 @@
-# Netflix India
+# Netflix
 
 This is a simple HTML webpage that mimics the homepage of Netflix India. It includes sections for hero content, TV viewing, downloading shows, streaming on multiple devices, creating profiles for kids, frequently asked questions, and contact information.
 
